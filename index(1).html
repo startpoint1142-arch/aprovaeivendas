@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="100 Questões Comentadas para Professor da Educação Infantil - União-PI. Material digital com questões autorais, gabarito e comentários.">
+  <title>100 Questões Comentadas | Professor da Educação Infantil — União-PI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#062b55;
+      --navy2:#0b4078;
+      --blue:#1769aa;
+      --yellow:#ffc928;
+      --yellow2:#ffe36b;
+      --green:#12a889;
+      --text:#10243b;
+      --muted:#5d6c7d;
+      --bg:#f7faff;
+      --white:#fff;
+      --shadow:0 18px 50px rgba(6,43,85,.12);
+      --radius:24px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    .topbar{background:var(--navy);color:#fff;text-align:center;font-weight:700;padding:10px 16px;font-size:14px}
+    .nav{padding:20px 0;background:#fff;border-bottom:1px solid #e9eef5}
+    .nav-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .logo{font-weight:900;font-size:25px;color:var(--navy);letter-spacing:-1px}
+    .logo span{display:block;font-size:10px;letter-spacing:1px;color:#56718e;font-weight:700}
+    .nav-cta{background:var(--yellow);padding:12px 20px;border-radius:999px;font-weight:900;color:var(--navy);box-shadow:0 7px 18px rgba(255,201,40,.25)}
+    .hero{padding:65px 0 45px;background:
+      radial-gradient(circle at 10% 10%,rgba(255,201,40,.24),transparent 28%),
+      radial-gradient(circle at 90% 20%,rgba(23,105,170,.14),transparent 30%),
+      linear-gradient(180deg,#fff 0%,#f5f9ff 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#eaf3ff;color:var(--blue);font-weight:800;padding:8px 14px;border-radius:999px;font-size:13px;margin-bottom:18px}
+    h1{font-family:Poppins,Inter,sans-serif;font-size:clamp(38px,5vw,64px);line-height:1.02;letter-spacing:-2.5px;color:var(--navy);margin-bottom:20px}
+    h1 strong{color:#f0ae00}
+    .hero p{font-size:19px;color:var(--muted);max-width:650px;margin-bottom:26px}
+    .cta{display:inline-flex;justify-content:center;align-items:center;background:linear-gradient(135deg,#ffd33d,#ffb900);color:var(--navy);font-weight:900;padding:17px 28px;border-radius:14px;font-size:17px;box-shadow:0 14px 30px rgba(255,185,0,.27);transition:.2s}
+    .cta:hover{transform:translateY(-2px);filter:brightness(1.03)}
+    .micro{font-size:12px!important;margin-top:12px;margin-bottom:0!important;color:#7b8896!important}
+    .hero-art{background:#fff;border-radius:28px;padding:10px;box-shadow:var(--shadow);transform:rotate(1deg)}
+    .hero-art img{display:block;width:100%;height:auto;border-radius:20px}
+    .proof{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px}
+    .proof-item{background:#fff;border:1px solid #e6edf5;border-radius:18px;padding:18px;text-align:center}
+    .proof-item b{display:block;color:var(--navy);font-size:15px}
+    .proof-item span{font-size:12px;color:var(--muted)}
+    section{padding:78px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+    .section-head h2{font-family:Poppins;font-size:36px;line-height:1.1;color:var(--navy);letter-spacing:-1px;margin-bottom:12px}
+    .section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:#fff;border:1px solid #e4ebf3;border-radius:var(--radius);padding:28px;box-shadow:0 10px 28px rgba(6,43,85,.05)}
+    .icon{width:52px;height:52px;border-radius:16px;background:#eaf3ff;display:grid;place-items:center;font-size:25px;margin-bottom:17px}
+    .card h3{color:var(--navy);font-size:19px;margin-bottom:8px}
+    .card p{color:var(--muted);font-size:14px}
+    .offer{background:linear-gradient(135deg,var(--navy),#0b4b86);color:#fff}
+    .offer-grid{display:grid;grid-template-columns:1fr .85fr;gap:35px;align-items:center}
+    .offer h2{font-family:Poppins;font-size:42px;line-height:1.08;margin-bottom:16px}
+    .offer p{color:#dbe9f7}
+    .checklist{margin:25px 0;display:grid;gap:12px}
+    .check{display:flex;gap:11px;align-items:flex-start}
+    .check i{font-style:normal;color:var(--yellow);font-weight:900}
+    .price-card{background:#fff;color:var(--text);border-radius:28px;padding:34px;box-shadow:0 20px 55px rgba(0,0,0,.2);text-align:center}
+    .price-card .small{color:var(--muted);font-size:13px;font-weight:700}
+    .price{font-family:Poppins;font-size:56px;color:var(--navy);font-weight:900;line-height:1;margin:10px 0}
+    .price small{font-size:20px}
+    .price-card .cta{width:100%;margin:15px 0 10px}
+    .guarantee{font-size:12px;color:var(--muted)}
+    .faq{max-width:850px;margin:auto;display:grid;gap:12px}
+    details{background:#fff;border:1px solid #e3eaf2;border-radius:16px;padding:18px 20px}
+    summary{cursor:pointer;font-weight:800;color:var(--navy)}
+    details p{padding-top:12px;color:var(--muted);font-size:14px}
+    .final{padding:75px 0;text-align:center;background:#fff}
+    .final h2{font-family:Poppins;font-size:42px;color:var(--navy);margin-bottom:13px}
+    .final p{color:var(--muted);margin-bottom:24px}
+    footer{background:#061f3d;color:#b8c9da;text-align:center;padding:28px 16px;font-size:12px}
+    footer strong{color:#fff}
+    .sticky{display:none}
+    @media(max-width:850px){
+      .hero-grid,.offer-grid{grid-template-columns:1fr}
+      .hero{padding-top:42px}
+      .cards{grid-template-columns:1fr}
+      .proof{grid-template-columns:1fr}
+      .hero-art{max-width:600px;margin:auto}
+      .offer h2,.final h2{font-size:34px}
+      .nav-cta{padding:10px 14px;font-size:13px}
+      .sticky{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:99;background:#fff;padding:10px;border-radius:16px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+      .sticky a{width:100%;text-align:center}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">📚 Material digital • Acesso após confirmação do pagamento</div>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="logo">APROVAEI <span>SEU FUTURO COMEÇA AQUI</span></div>
+      <a class="nav-cta" href="https://pay.kiwify.com.br/ASSYgRg" target="_blank" rel="noopener">QUERO O MATERIAL</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">🎯 FOCO NO CONCURSO DE UNIÃO-PI</div>
+          <h1>Chegue mais preparado com <strong>100 questões comentadas</strong></h1>
+          <p>Pratique os conteúdos para <strong>Professor da Educação Infantil — União-PI</strong>, descubra seus pontos fracos e revise de forma objetiva antes da prova.</p>
+          <a class="cta" href="https://pay.kiwify.com.br/ASSYgRg" target="_blank" rel="noopener">🚀 QUERO AS 100 QUESTÕES</a>
+          <p class="micro">Pagamento seguro • Produto digital • Acesso automático após a confirmação</p>
+        </div>
+        <div class="hero-art">
+          <img src="arte-produto.png" alt="100 Questões Comentadas - Professor da Educação Infantil - União-PI">
+        </div>
+      </div>
+
+      <div class="container proof">
+        <div class="proof-item"><b>100 questões</b><span>Para praticar e revisar</span></div>
+        <div class="proof-item"><b>Gabarito + comentários</b><span>Entenda seus erros</span></div>
+        <div class="proof-item"><b>Material em PDF</b><span>Estude no celular ou computador</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Por que praticar questões?</h2>
+          <p>Não basta apenas ler a teoria. Resolver questões ajuda você a testar o que realmente aprendeu e perceber onde precisa revisar.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">📝</div><h3>Treine na prática</h3><p>Resolva 100 questões autorais relacionadas aos conteúdos de preparação para o cargo.</p></article>
+          <article class="card"><div class="icon">💡</div><h3>Entenda seus erros</h3><p>Confira o gabarito e os comentários para compreender a lógica da resposta e revisar o conteúdo.</p></article>
+          <article class="card"><div class="icon">🎯</div><h3>Estude com direção</h3><p>Questões organizadas por assuntos para você concentrar seus estudos nos pontos que mais precisa.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="container offer-grid">
+        <div>
+          <div class="eyebrow" style="background:rgba(255,255,255,.12);color:#ffe36b">O QUE VOCÊ RECEBE</div>
+          <h2>Um material simples para transformar teoria em prática.</h2>
+          <p>Ideal para quem já está estudando e quer acrescentar uma rotina de resolução de questões à preparação.</p>
+          <div class="checklist">
+            <div class="check"><i>✓</i><span><strong>100 questões autorais</strong> para treinamento</span></div>
+            <div class="check"><i>✓</i><span><strong>5 alternativas</strong> em cada questão</span></div>
+            <div class="check"><i>✓</i><span><strong>Gabarito e comentários</strong> explicativos</span></div>
+            <div class="check"><i>✓</i><span><strong>Organização por assuntos</strong> do conteúdo de estudo</span></div>
+            <div class="check"><i>✓</i><span><strong>Material digital em PDF</strong> para estudar onde quiser</span></div>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="small">ACESSO AO MATERIAL</div>
+          <div class="price"><small>R$</small> 9,90</div>
+          <p>Pagamento único</p>
+          <a class="cta" href="https://pay.kiwify.com.br/ASSYgRg" target="_blank" rel="noopener">QUERO COMPRAR AGORA</a>
+          <div class="guarantee">🔒 Checkout seguro • Acesso digital após confirmação</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Como você recebe?</h2>
+          <p>O processo é simples e automático.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">1️⃣</div><h3>Faça sua compra</h3><p>Clique em qualquer botão e você será levado ao checkout seguro da Kiwify.</p></article>
+          <article class="card"><div class="icon">2️⃣</div><h3>Confirme o pagamento</h3><p>Após a confirmação, o sistema identifica automaticamente sua compra.</p></article>
+          <article class="card"><div class="icon">3️⃣</div><h3>Acesse o material</h3><p>Você recebe as instruções de acesso e pode baixar o PDF para começar a estudar.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:#f0f6fc">
+      <div class="container">
+        <div class="section-head">
+          <h2>Dúvidas frequentes</h2>
+        </div>
+        <div class="faq">
+          <details><summary>É um material físico?</summary><p>Não. É um produto totalmente digital em PDF. Não há envio físico.</p></details>
+          <details><summary>Quando recebo o material?</summary><p>Após a confirmação do pagamento, o acesso é liberado automaticamente conforme as condições de entrega do checkout.</p></details>
+          <details><summary>Posso estudar pelo celular?</summary><p>Sim. O PDF pode ser acessado em celular, tablet ou computador.</p></details>
+          <details><summary>As questões são oficiais da banca?</summary><p>Não. São questões autorais de treinamento, elaboradas para ajudar na preparação com base nos conteúdos de estudo. O material não possui vínculo oficial com a Prefeitura de União-PI ou com a banca organizadora.</p></details>
+          <details><summary>É um curso completo?</summary><p>Não. Este produto é um material de questões comentadas. Ele não inclui aulas em vídeo, mentoria ou acompanhamento individual.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="container">
+        <h2>Está estudando para União-PI?</h2>
+        <p>Coloque seu conhecimento à prova e descubra onde você precisa melhorar.</p>
+        <a class="cta" href="https://pay.kiwify.com.br/ASSYgRg" target="_blank" rel="noopener">🚀 ACESSAR O CHECKOUT</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>APROVAEI</strong><br>
+    Material independente para preparação e treinamento. Não possui vínculo oficial com a Prefeitura de União-PI, IGEDUC ou qualquer órgão público.
+  </footer>
+
+  <div class="sticky">
+    <a class="cta" href="https://pay.kiwify.com.br/ASSYgRg" target="_blank" rel="noopener">QUERO AS 100 QUESTÕES — R$ 9,90</a>
+  </div>
+</body>
+</html>
